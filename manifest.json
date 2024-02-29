@@ -1,0 +1,25 @@
+{
+  "name": "name here",
+  "version": "0.1",
+  "manifest_version": 3,
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "nativeMessaging", 
+    "scripting",
+    "tabGroups"
+  ],
+  "host_permissions": [
+    "http://destention/website.com/*"
+  ]
+  ,
+  "content_scripts": [
+    {
+      "matches": [
+        "http://destention/website.com/*"
+      ],
+      "js": ["background.js"],
+      "css": ["mycss.css"]
+    }
+  ]
+}
